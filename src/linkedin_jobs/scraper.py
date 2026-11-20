@@ -31,9 +31,9 @@ import json
 import logging
 import re
 import time
-from collections.abc import Iterable, Sequence
+from collections.abc import Callable, Iterable, Sequence
 from dataclasses import asdict, dataclass, fields
-from typing import Any, Callable
+from typing import Any
 from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
 from bs4 import BeautifulSoup

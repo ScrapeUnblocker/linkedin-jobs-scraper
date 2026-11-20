@@ -13,8 +13,7 @@ from __future__ import annotations
 import argparse
 import logging
 import sys
-from collections.abc import Sequence
-from typing import Callable
+from collections.abc import Callable, Sequence
 
 from . import __version__
 from .scraper import (

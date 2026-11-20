@@ -7,20 +7,20 @@ name = "scrapeunblocker-linkedin-jobs"
 version = "0.1.0"
 description = "Scrape public LinkedIn job listings into clean JSON/CSV via the ScrapeUnblocker getPageSource API."
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.11"
 license = { text = "MIT" }
 authors = [{ name = "ScrapeUnblocker" }]
 keywords = ["linkedin", "linkedin-jobs", "jobs", "job-scraper", "job-search", "recruiting", "web-scraping", "scraper", "scrapeunblocker"]
 classifiers = [
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.9",
-    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.13",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Topic :: Internet :: WWW/HTTP :: Indexing/Search",
     "Topic :: Office/Business",
 ]
-dependencies = ["scrapeunblocker>=0.2", "beautifulsoup4>=4.9"]
+dependencies = ["scrapeunblocker>=0.20,<1", "beautifulsoup4>=4.9"]
 
 [project.urls]
 Homepage = "https://scrapeunblocker.com/?utm_source=github&utm_medium=integration&utm_campaign=example-repos"
@@ -37,7 +37,7 @@ where = ["src"]
 
 [tool.ruff]
 line-length = 100
-target-version = "py39"
+target-version = "py311"
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B"]
